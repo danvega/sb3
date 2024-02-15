@@ -7,13 +7,12 @@ This is the demo code for my talk, Spring Boot 3 and Beyond.
 - Spring Initializr
   - web,postgresql,docker-compose,jdbc,devtools, actuator,graalvm
 - Open the project in IntelliJ
-  - pom.xml
   - Docker Composer
 - Run the application
+  - Docker Compose
   - Tomcat 10.1 & Servlet API 6.0 (Jakarta EE 10)
 - Model
   - Post Package
-  - Post Class-
   - Post Record
   - Validation
 - Database Abstractions (Picking the correct one for your project)
@@ -48,7 +47,6 @@ This is the demo code for my talk, Spring Boot 3 and Beyond.
 
 Examine the following files: 
 
-- `pom.xml`
 - `docker-compose.yml`
 
 ## Run the Application 
@@ -411,3 +409,10 @@ public class MyRuntimeHints {
 
 }
 ```
+
+
+Notes 
+- GitHub Repo Open in Browser
+- have IntelliJ open (refactor application)
+  - maybe have a start branch so that I can have all the builds ready to go
+-  

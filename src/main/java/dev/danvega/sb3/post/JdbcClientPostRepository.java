@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class JdbcPostRepository {
+public class JdbcClientPostRepository {
 
     private static final Logger log = LoggerFactory.getLogger(PostRepository.class);
     private final JdbcClient jdbcClient;
     private final JdbcTemplate jdbcTemplate;
 
-    public JdbcPostRepository(JdbcClient jdbcClient, JdbcTemplate jdbcTemplate) {
+    public JdbcClientPostRepository(JdbcClient jdbcClient, JdbcTemplate jdbcTemplate) {
         this.jdbcClient = jdbcClient;
         this.jdbcTemplate = jdbcTemplate;
     }
