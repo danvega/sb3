@@ -57,6 +57,10 @@ Take notice that we are using Tomcat 10.1 / Servlet 6.0 (Jakarta EE 10)
 2024-02-13T13:54:45.913-05:00  INFO 97480 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
 ```
 
+Also take notice that the Docker Compose file is getting picked up by convention and the database container is being started.
+
+```properties
+
 ## Database Abstractions
 
 Picking the correct abstraction level for the project.
