@@ -10,6 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ImportRuntimeHints;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.support.RestClientAdapter;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
@@ -37,9 +38,6 @@ public class Application {
 		return args -> {
 			List<Post> posts = postClient.findAll();
 			postRepository.saveAll(posts);
-
-			Post byId = postClient.findById(1);
-			log.info("Post with id 1: {}", byId);
 		};
 	}
 }
