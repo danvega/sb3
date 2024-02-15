@@ -8,12 +8,12 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class PostRepository {
+public class JdbcTemplatePostRepository {
 
     private static final Logger log = LoggerFactory.getLogger(PostRepository.class);
     private final JdbcTemplate jdbcTemplate;
 
-    public PostRepository(JdbcTemplate jdbcTemplate) {
+    public JdbcTemplatePostRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
