@@ -32,6 +32,8 @@ This is the demo code for my talk, Spring Boot 3 and Beyond.
   - Rest Template
   - Rest Client
   - Http Interfaces
+- Upgrade
+  - [OpenRewrite](https://docs.openrewrite.org/)
 - Production
   - Virtual Threads
   - JAR 
